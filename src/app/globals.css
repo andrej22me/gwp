@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #B39852;
+  --blogPostTitle: #405B6F;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  @apply font-montserrat;
+}
+p {
+  @apply font-ubuntu;
+}
+
+.slick-dots li button:before {
+  color: #b39852; /* Change dots color */
+}
+
+.slick-prev,
+.slick-next {
+  color: #b39852; /* Change arrow color */
+  z-index: 1; /* Ensure arrows are above the slides */
+}
+
+.slick-prev {
+  left: -35px; /* Adjust position */
+}
+
+.slick-next {
+  right: -35px; /* Adjust position */
+}
+
+
+
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
